@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>To do list</title>
+</head>
+<body>
+  <h1>To do list:</h1>
+  <input type="text" id="userInput" placeholder="Enter text here">
+  <button id="showBtn">Add</button>
+  <ul id="display"></ul>
+  <script>
+    let input = document.getElementById("userInput");
+    let button = document.getElementById("showBtn");
+    let display = document.getElementById("display");
+    button.addEventListener("click",function()
+    {
+    let li= document.createElement("li");
+    li.textContent = input.value ;
+    let but =document.createElement("button");
+    but.textContent="delete";
+    but.addEventListener("click",function()
+    {
+      display.removeChild(li);
+    })
+    li.appendChild(but);
+    display.appendChild(li);
+    input.value ="";
+  });
+  </script>
+</body>
+</html>

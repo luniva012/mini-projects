@@ -1,0 +1,102 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Headings */
+h1,h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Image */
+img {
+  max-width: 300px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+/* Table 
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 15px 0;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+th {
+  background-color: #f0f0f0;
+}*/
+/* Form */
+form {
+  margin: 20px 0;
+}
+label {
+  font-weight: bold;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Semantic sections */
+header {
+  background-color: #bad1e2;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+footer {
+
+  background-color: #fdfefe;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #eee;
+}
+ul{
+  color: #333;
+  margin-bottom : 3px;
+  font-style: italic;
+}
+nav a
+{
+  color: whitesmoke;
+  text-decoration: dotted;
+  margin: auto 10px;
+}
+.class{
+  display: flex;
+  gap: 10px;                /* space between items */
+  justify-content: space-between; /* spread items evenly */
+  align-items: center;      /* align vertically */
+}
