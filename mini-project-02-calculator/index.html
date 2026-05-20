@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Calculator App</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f0; /* soft page background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+    #calculator {
+  width: 220px;
+  margin: 50px auto;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: #e8f5e9; /* pastel green background */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+    #display {
+  background: #ffffff;
+  color: #2e7d32;  
+  width: 200px;
+  height: 40px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+    }
+    button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+   background: #a5d6a7; /* pastel green buttons */
+  color: #1b5e20;
+  cursor: pointer;
+}
+   
+  button:hover {
+  background: #81c784;
+}
+
+button:active {
+ background: #66bb6a
+  
+}
+  </style>
+</head>
+<body>
+  <h2>Calculator App</h2>
+  <div id="calculator">
+    <input type="text" id="display" disabled>
+    <div>
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button onclick="appendOperator('/')">÷</button>
+    </div>
+    <div>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button onclick="appendOperator('*')">×</button>
+    </div>
+    <div>
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button onclick="appendOperator('-')">−</button>
+    </div>
+    <div>
+      <button onclick="appendNumber(0)">0</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="clearEntry()">CE</button>
+      <button onclick="appendOperator('+')">+</button>
+    </div>
+    <div>
+      <button onclick="squareRoot()">√</button>
+      <button onclick="percentage()">%</button>
+      <button onclick="appendDecimal()">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
