@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Weather App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #app {
+      width: 750px;
+      padding: 10px;
+      border-radius: 12px;
+      background: #e3f2fd; /* pastel blue card */
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    #cityInput {
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #90caf9;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 8px 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background: #64b5f6;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #42a5f5;
+    }
+
+    #weatherResult {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #0d47a1;
+    }
+    img
+    {
+      border: 1px solid black;
+      background-color: burlywood;
+      border-radius: 5px;
+    }
+    .forecast-container {
+  display: flex;
+  flex-wrap: nowrap;           /* keeps all cards on one line */
+  justify-content: center;     /* centers the row */
+  align-items: stretch;        /* equal height alignment */
+  gap: 15px;                   /* space between cards */
+  overflow-x: auto;            /* allows horizontal scroll if needed */
+  padding: 10px;
+}
+
+.forecast-container .day {
+  background: #e3f2fd;          /* pastel blue card */
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;                 /* fixed width for uniform cards */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.forecast-container .day:hover {
+  transform: translateY(-5px);  /* subtle hover lift */
+}
+.forecast-container img {
+  width: 50px;
+  height: 50px;
+}
+
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h2>Weather App</h2>
+    <input type="text" id="cityInput" placeholder="Enter city">
+    <button onclick="getWeather()">Search Current</button>
+    <button onclick="getForecast()">5-Day Forecast</button>
+<div id="weatherResult"></div>
+<div id="forecastResult" class="forecast-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
