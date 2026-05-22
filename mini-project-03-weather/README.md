@@ -5,7 +5,6 @@ A lightweight, responsive web application that fetches and displays real-time we
 ## 🚀 Features
 * **Live Weather Data**: Fetches current temperature, humidity, and wind speed.
 * **City Search**: Dynamically updates data based on user input.
-* **Responsive Design**: Clean user interface optimized for mobile and desktop screens.
 
 ## 🛠️ Technologies Used
 * **API**: [OpenWeatherMap API](https://openweathermap.org)
