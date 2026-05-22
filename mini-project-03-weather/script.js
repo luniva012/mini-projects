@@ -1,6 +1,6 @@
 async function getWeather() {
   const city = document.getElementById("cityInput").value;
-  const apiKey = "9fa9cd823819c1d2d1f193e685032530";
+  
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   try {
@@ -22,7 +22,7 @@ async function getWeather() {
 }
 async function getForecast() {
   const city = document.getElementById("cityInput").value;
-  const apiKey = "9fa9cd823819c1d2d1f193e685032530";
+  const apiKey = "";
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
   try {
